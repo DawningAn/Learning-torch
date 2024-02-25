@@ -1,6 +1,6 @@
 import os
 
-root_dir = '练手数据集/train'
+root_dir = 'data/train'
 target_dir = 'ants_image'
 img_path = os.listdir(os.path.join(root_dir, target_dir))
 label = target_dir.split('_')[0]  # 即ants作为标签
