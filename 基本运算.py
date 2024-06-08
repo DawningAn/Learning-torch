@@ -1,18 +1,11 @@
-import torch
 
-x = torch.randn(4,4)
-print(x)
 
-y = x.view(16)
-print(y)
+my_dict = {'apple': 1, 'banana': 2, 'orange': 3}
+print(my_dict['apple'])  # 输出 1
 
-z = x.view(-1, 8)
-print(z)
+a = my_dict['apple']
+print(a)
+a = 2
+print(my_dict['apple'])  # 输出 1
 
-print(x.size(), y.size(), z.size())
-
-# 如果张量中只有一个元素，可以用.item() 将值取出，作为一个python number
-x = torch.randn(1)
-print(x)
-print(x.item())
 
