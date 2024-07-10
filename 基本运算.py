@@ -8,4 +8,9 @@ print(a)
 a = 2
 print(my_dict['apple'])  # 输出 1
 
+strA = "hello"
+strB = "world"
+print(f'{strA},{strB}')
+print(f'{"strA"},{"strB"}')
+
 
